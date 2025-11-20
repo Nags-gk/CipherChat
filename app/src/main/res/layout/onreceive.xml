@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#26282C"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Sender:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="35dp"
+
+        android:background="@drawable/custom_input_1"
+        android:orientation="vertical" >
+
+        <TextView
+
+            android:id="@+id/senderNum"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:background="@drawable/custom_input_1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textView2"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-medium"
+
+        android:text="16-Character Secret Key:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <EditText
+
+        android:id="@+id/secretKey"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="35dp"
+
+        android:background="@drawable/custom_input_1"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Received Encrypted Message:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+
+        android:id="@+id/encryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="196dp"
+        android:background="@drawable/custom_input_1"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+
+        android:id="@+id/textView4"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Decrypted Message:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+
+        android:id="@+id/decryptedMsg"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="356dp"
+
+        android:layout_weight="0.05"
+        android:background="@drawable/custom_input_1"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/submit"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input_2"
+            android:fontFamily="sans-serif-medium"
+            android:hapticFeedbackEnabled="false"
+            android:text="Submit"
+            android:textColor="#FFFFFF" />
+
+        <Button
+
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input_2"
+            android:fontFamily="sans-serif-medium"
+            android:text="Cancel"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
